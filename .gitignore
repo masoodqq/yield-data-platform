@@ -1,0 +1,13 @@
+venv/
+sim_outputs/
+wafer_outputs/
+delta/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+metadata.db
+*.log
+metastore_db/
+derby.log
+spark-warehouse/
