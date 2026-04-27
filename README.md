@@ -359,9 +359,9 @@ Each heatmap also shows yield stats at the top:
 To view heatmaps for different wafers replace the wafer ID in the URL:
 
 
-![Wafer Heatmap W01](images/wafer_heatmap_W01.png) | http://localhost:8002/wafer/W01/heatmap
-![Wafer Heatmap W08](images/wafer_heatmap_W08.png) |http://localhost:8002/wafer/W08/heatmap
-![Wafer Heatmap W19](images/wafer_heatmap_W19.png) | http://localhost:8002/wafer/W19/heatmap
+![Wafer Heatmap W01](images/wafer_heatmap_W01.png) 
+![Wafer Heatmap W08](images/wafer_heatmap_W08.png)
+![Wafer Heatmap W19](images/wafer_heatmap_W19.png)
 
 
 ## Monitoring
