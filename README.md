@@ -335,6 +335,35 @@ df = spark.read.format("delta") \
 
 ---
 
+## Wafer Heatmap Visualization
+
+The platform includes an interactive HTML wafer map accessible directly in the browser. Each die in the 10x10 grid is color coded by pass/fail status and defect type. Hovering over any die shows the cell type, defect code, and coordinates.
+
+**Color coding:**
+
+| Color | Meaning |
+|---|---|
+| 🟢 Green | Passed |
+| 🟠 Orange | Particle defect |
+| 🟣 Purple | Scratch |
+| 🔴 Red | Void |
+| 🔵 Dark red | Bridge |
+| ⚫ Dark purple | Open circuit |
+
+Each heatmap also shows yield stats at the top:
+- Overall yield percentage (green above 80%, orange above 60%, red below 60%)
+- Total passed dies
+- Total failed dies
+- Total dies on wafer
+
+To view heatmaps for different wafers replace the wafer ID in the URL:
+
+
+![Wafer Heatmap W01](images/wafer_heatmap_W01.png) | http://localhost:8002/wafer/W01/heatmap
+![Wafer Heatmap W08](images/wafer_heatmap_W08.png) |http://localhost:8002/wafer/W08/heatmap
+![Wafer Heatmap W19](images/wafer_heatmap_W19.png) | http://localhost:8002/wafer/W19/heatmap
+
+
 ## Monitoring
 
 | Service | URL |
