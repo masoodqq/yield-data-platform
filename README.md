@@ -356,7 +356,7 @@ Each heatmap also shows yield stats at the top:
 - Total failed dies
 - Total dies on wafer
 
-Heatmaps for different wafers:
+### Heatmaps for different wafers:
 
 
 ![Wafer Heatmap W01](images/wafer_heatmap_W01.png) 
