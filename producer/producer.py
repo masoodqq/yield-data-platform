@@ -4,14 +4,15 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from kafka import KafkaProducer
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import KAFKA_BROKER, KAFKA_TOPIC
+
 WATCH_DIR = "./wafer_outputs"
-KAFKA_TOPIC = "wafer-test-results"
-KAFKA_SERVER = "localhost:9092"
 
 os.makedirs(WATCH_DIR, exist_ok=True)
 
 producer = KafkaProducer(
-    bootstrap_servers=KAFKA_SERVER,
+    bootstrap_servers=KAFKA_BROKER,
     value_serializer=lambda v: json.dumps(v).encode("utf-8")
 )
 
